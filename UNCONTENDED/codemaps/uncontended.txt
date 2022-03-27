@@ -1,0 +1,79 @@
+Object  file uncontended.o at $0000: Z80RMF12
+  Name: uncontended
+  Section data_compiler: 6 bytes
+  Section code_compiler: 1788 bytes
+  Section rodata_compiler: 525 bytes
+  Section bss_compiler: 38 bytes
+  Section code_user: 52 bytes
+  Section rodata_user: 8 bytes
+  Section smc_user: 0 bytes
+  Section data_user: 0 bytes
+  Section bss_user: 0 bytes
+  Symbols:
+    G A $0000 _x (section bss_compiler) (file uncontended.c:1180)
+    G A $0002 _y (section bss_compiler) (file uncontended.c:1181)
+    G A $0004 _t (section bss_compiler) (file uncontended.c:1182)
+    G A $0000 _yHeight (section data_compiler) (file uncontended.c:17)
+    G A $0001 _xWidth (section data_compiler) (file uncontended.c:21)
+    G A $000A _microSec (section bss_compiler) (file uncontended.c:1183)
+    G A $000E _seconds (section bss_compiler) (file uncontended.c:1184)
+    G A $0012 _minutes (section bss_compiler) (file uncontended.c:1185)
+    G A $0016 _timeStart (section bss_compiler) (file uncontended.c:1186)
+    G A $001A _timeEnd (section bss_compiler) (file uncontended.c:1187)
+    G A $001E _timeDiff (section bss_compiler) (file uncontended.c:1188)
+    G A $0002 _xx (section data_compiler) (file uncontended.c:25)
+    G A $0003 _yy (section data_compiler) (file uncontended.c:29)
+    G A $0022 _temp (section bss_compiler) (file uncontended.c:1189)
+    G A $0000 _ZX_plot (section code_compiler) (file uncontended.c:41)
+    G A $002A _unplot (section code_compiler) (file uncontended.c:76)
+    G A $0083 _zxSpectrumROM (section code_compiler) (file uncontended.c:137)
+    G A $00D3 _loop_tester_routine (section code_compiler) (file uncontended.c:183)
+    G A $0120 _z88dkPlotFill (section code_compiler) (file uncontended.c:228)
+    G A $016C _R_Tune_table (section code_compiler) (file uncontended.c:274)
+    G A $01BC _Snow_table_routine (section code_compiler) (file uncontended.c:320)
+    G A $020C _slavo_table_routine (section code_compiler) (file uncontended.c:366)
+    G A $025C _rtunes_optimized_table_routine (section code_compiler) (file uncontended.c:412)
+    G A $02AC _richard_table_routine (section code_compiler) (file uncontended.c:458)
+    G A $02FC _allan_table_routine (section code_compiler) (file uncontended.c:504)
+    G A $034C _timerStart (section code_compiler) (file uncontended.c:550)
+    G A $03AB _timerEnd (section code_compiler) (file uncontended.c:594)
+    G A $0419 _forcedPause (section code_compiler) (file uncontended.c:645)
+    G A $043B _pressKey (section code_compiler) (file uncontended.c:673)
+    G A $0449 _waitForKey (section code_compiler) (file uncontended.c:686)
+    G A $046A _beforeDrawing (section code_compiler) (file uncontended.c:709)
+    G A $0477 _printBinary (section code_compiler) (file uncontended.c:721)
+    G A $067A _printOptions (section code_compiler) (file uncontended.c:987)
+    G A $0548 _options1 (section code_compiler) (file uncontended.c:844)
+    G A $06EE _main (section code_compiler) (file uncontended.c:1049)
+    G A $0000 _gfx_x (section code_user) (file plot.asm:5)
+    G A $0001 _gfx_y (section code_user) (file plot.asm:10)
+    G A $0002 _gfx_xy (section code_user) (file plot.asm:14)
+    G A $0004 _gfx_yx (section code_user) (file plot.asm:18)
+    G A $0006 _loop_tester (section code_user) (file plot.asm:25)
+    G A $0007 _ZX_ROM (section code_user) (file plot.asm:29)
+  Externs:
+    U         l_gint
+    U         l_gintspsp
+    U         l_or
+    U         l_and
+    U         l_gt
+    U         l_com
+    U         l_long_add
+    U         l_long_sub
+    U         l_long_mult
+    U         zx_border
+    U         zx_cls
+    U         zx_px2bitmask
+    U         zx_pxy2saddr_callee
+    U         zx_saddr2aaddr
+    U         printf
+    U         in_key_pressed
+    U         in_wait_key
+    U         in_wait_nokey
+    U         _plotpixel2
+    U         _COORDS
+    U         _snow_plot
+    U         _slavo_plot
+    U         _rtunes2
+    U         _Richard_plot
+    U         _Allan_Turvey_plot
