@@ -65,13 +65,26 @@ void options1 (void)
 		    printf("\x16\x01\x02");
 		    timerStart();
 
-		    //asmPlot1Fill();
 		    zxSpectrumROM();
 
             timerEnd();
             waitForKey ();
             break;
 		}//end q
+
+        if (in_key_pressed( IN_KEY_SCANCODE_w ))
+		{   //SPECCY ROM
+		    zx_cls(PAPER_WHITE | INK_BLUE);
+		    printf("\x16\x01\x02");
+		    timerStart();
+
+		    rtunes_pixelRoutine();
+
+            timerEnd();
+            waitForKey ();
+            break;
+		}//end q
+
 
         if (in_key_pressed( IN_KEY_SCANCODE_a))
 		{   //R-Tune LUT
@@ -83,6 +96,7 @@ void options1 (void)
 
             timerEnd();
             printf ("RTune LUT @ 107 T-states per pixel\n");
+            printf ("912 byte aligned table with gaps\n");
 
             waitForKey ();
             break;
@@ -98,7 +112,7 @@ void options1 (void)
 
             timerEnd();
             printf ("Snow LUT @ 103 T-states\n");
-
+            printf ("400 byte aligned table no gaps\n");
             waitForKey ();
             break;
 		}//end s
@@ -113,6 +127,7 @@ void options1 (void)
 
             timerEnd();
             printf ("Slavo LUT @ 103 T-states\n");
+            printf ("400 byte aligned table no gaps\n");
 
             waitForKey ();
             break;
@@ -128,13 +143,14 @@ void options1 (void)
 
             timerEnd();
             printf ("Rtunes optimized LUT @ 102 T-states\n");
+            printf ("912 byte aligned table with gaps\n");
 
             waitForKey ();
             break;
 		}//end f
 
         if (in_key_pressed( IN_KEY_SCANCODE_g))
-		{   //Rtunes optimized Routine
+		{   //Allan Turvey Routine
 		    zx_cls(PAPER_WHITE | INK_BLUE);
 		    printf("\x16\x01\x02");
 		    timerStart();
@@ -143,10 +159,46 @@ void options1 (void)
 
             timerEnd();
             printf ("Allan Turvey LUT @111  T-states\n");
+            printf ("960 byte aligned table with 64 bit gap\n");
 
             waitForKey ();
             break;
 		}//end
+
+		if (in_key_pressed( IN_KEY_SCANCODE_h))
+		{   //An optimized Allan Turvey Routine
+		    //accidentally created by mutilating his beautiful code
+		    zx_cls(PAPER_WHITE | INK_BLUE);
+		    printf("\x16\x01\x02");
+		    timerStart();
+
+		    allan_Experimental_table_routine();
+
+            timerEnd();
+            printf ("Allan Turvey LUT @ 103  T-states\n");
+            printf ("960 byte aligned table with 64 bit gap\n");
+
+            waitForKey ();
+            break;
+		}//end
+
+		if (in_key_pressed( IN_KEY_SCANCODE_z))
+		{   //why isn't this working Richard!
+		    zx_cls(PAPER_WHITE | INK_BLUE);
+		    printf("\x16\x01\x02");
+		    timerStart();
+
+		    Richard_plot();
+
+            timerEnd();
+            printf ("Bazinga not working  T-states\n");
+
+            waitForKey ();
+            break;
+		}//end
+
+
+
 
     }//end while
 }//end function
@@ -158,16 +210,19 @@ void printOptions (void)
         zx_border (2);
         printf("\x16\x01\x02");
 
-        printf ("Welcome to the LUT Plot tester V0.1\n");
+        printf ("Welcome to the LUT Plot tester V0.2\n");
         printf ("press a key for test\n");
         printf ("\n");
 
         printf ("q - ZX ROM      470-589 T-states per pixel\n");
+        printf ("w - RTunes Calculated\n");
         printf ("a - RTunes LUT\n");
         printf ("s - Snow Demo LUT\n");
         printf ("d - Slavo Labsky LUT\n");
         printf ("f - RTunes Optimized\n");
         printf ("g - Allan Turvey LUT 1\n");
+
+        printf ("h - Allan Optimized LUT 1\n");
     }
     options1();
 }

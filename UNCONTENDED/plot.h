@@ -44,6 +44,20 @@ void zxSpectrumROM (void)
     }
 }
 
+//https://worldofspectrum.org/forums/discussion/472/line-routine/p1
+void rtunes_pixelRoutine (void)
+{
+    zx_cls(PAPER_WHITE | INK_BLACK);
+    for (yy = 0; yy < 192; yy++)
+    {
+        for (xx = 0; xx < 255 ; xx++)
+        {
+            COORDS = (yy << 8) | xx;
+            rtunes_pixel();
+        }
+    }
+}
+
 
 void loop_tester_routine (void)
 {
@@ -83,8 +97,6 @@ void R_Tune_table (void)
         {
             COORDS = (yy << 8) | xx;
             plotpixel2(); //good
-
-            //Slavo_Labsky();
         }
     }
 }
@@ -134,7 +146,41 @@ void rtunes_optimized_table_routine (void)
     }
 }
 
-void richard_table_routine (void)
+
+
+void allan_table_routine (void)
+{
+    zx_cls(PAPER_WHITE | INK_BLACK);
+
+    for (yy = 0; yy < 192; yy++)
+    {
+        for (xx = 0; xx < 255 ; xx++)
+        {
+            COORDS = (xx << 8) | yy;
+            Allan_Turvey_plot();
+            //junker();
+        }
+    }
+}
+
+
+void allan_Experimental_table_routine (void)
+{
+    zx_cls(PAPER_WHITE | INK_BLACK);
+
+    for (yy = 0; yy < 192; yy++)
+    {
+        for (xx = 0; xx < 255 ; xx++)
+        {
+            COORDS = (yy << 8) | xx;
+            experimental_LUT();
+            //junker();
+        }
+    }
+}
+
+
+void cat_meows_table_routine (void)
 {
     zx_cls(PAPER_WHITE | INK_BLACK);
 
@@ -147,23 +193,6 @@ void richard_table_routine (void)
         }
     }
 }
-
-void allan_table_routine (void)
-{
-    zx_cls(PAPER_WHITE | INK_BLACK);
-
-    for (yy = 0; yy < 192; yy++)
-    {
-        for (xx = 0; xx < 255 ; xx++)
-        {
-            COORDS = (xx << 8) | yy;
-            Allan_Turvey_plot();
-        }
-    }
-}
-
-
-
 
 
 

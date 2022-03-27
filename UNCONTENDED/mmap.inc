@@ -30,7 +30,7 @@ org 0xD300
 SECTION rTune_table_4
 org 0xD400
 
-SECTION DSmith_table_1
+SECTION address_table_1
 org 0xD500
 
 SECTION busy_table
