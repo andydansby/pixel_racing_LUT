@@ -43,27 +43,3 @@ That should be "extern int b;".
 The C declarations are not creating space -
 they only tell the compiler the variables
 exist and are defined elsewhere.
-
-
-PUBLIC _plotpixel2
-_plotpixel2:
-    push de
-
-    ld bc, (_COORDS)
-
-
-    ld e,c ;cord x
-    ld l,b ;cord y
-    ld h, _taby1/256
-    ld d, _tabx1/256
-    ld a,(de)
-    inc d
-    add a,(hl)
-    inc h
-    ld h,(hl)
-    ld l,a
-    ld a,(de)
-    or (hl)
-    ld (hl),a
-    pop de
-ret

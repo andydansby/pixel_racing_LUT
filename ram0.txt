@@ -1,30 +1,34 @@
 Object  file ram0.o at $0000: Z80RMF12
   Name: RAM0
   Section code_compiler: 0 bytes
-  Section BANK_00: 141 bytes
+  Section BANK_00: 206 bytes
   Section bss_compiler: 0 bytes
   Section rTune_table_1: 256 bytes
   Section rTune_table_2: 256 bytes
   Section rTune_table_3: 192 bytes
   Section rTune_table_4: 192 bytes
-  Section DSmith_table_1: 448 bytes
+  Section address_table_1: 448 bytes
   Section busy_table: 512 bytes
   Section snow_table: 1024 bytes
   Section low_high_table_1: 384 bytes
+  Section allan_table_1: 960 bytes
   Symbols:
     G A $0000 _subtract2numbers (section BANK_00) (file ram0.c:27)
     G A $0015 _COORDS (section BANK_00) (file ram0Z.asm:40)
     G A $0017 _plotpixel2 (section BANK_00) (file rtunes_plot.asm:10)
-    G A $002D _snow_plot (section BANK_00) (file snow_demo_plot.asm:3)
-    G A $0040 _point (section BANK_00) (file ram0Z.asm:67)
-    G A $0053 _slavo_plot (section BANK_00) (file ram0Z.asm:92)
-    G A $0066 _catmeows (section BANK_00) (file ram0Z.asm:110)
-    G A $007A _Slavo_Labsky (section BANK_00) (file ram0Z.asm:145)
+    G A $002B _rtunes2 (section BANK_00) (file rtunes_plot.asm:33)
+    G A $003E _snow_plot (section BANK_00) (file snow_demo_plot.asm:3)
+    G A $0051 _slavo_plot (section BANK_00) (file slavo_plot.asm:10)
+    G A $0064 _Allan_Turvey_plot (section BANK_00) (file allan_plot.asm:6)
+    G A $0079 _experimental_LUT (section BANK_00) (file allan_plot.asm:32)
+    G A $008C _rtunes_pixel (section BANK_00) (file ram0Z.asm:52)
+    G A $00BC _Richard_plot (section BANK_00) (file ram0Z.asm:105)
     G A $0000 _tabx1 (section rTune_table_1) (file rtune_table1.asm:7)
     G A $0000 _tabx2 (section rTune_table_2) (file rtune_table2.asm:7)
     G A $0000 _taby1 (section rTune_table_3) (file rtune_table3.asm:8)
     G A $0000 _taby2 (section rTune_table_4) (file rtune_table4.asm:8)
-    G A $0000 _DSmith_table (section DSmith_table_1) (file dsmith_table.asm:5)
+    G A $0000 _address_table (section address_table_1) (file address_table.asm:5)
     G A $0000 _busy_tab (section busy_table) (file busy_table.asm:7)
     G A $0000 _snow_tab (section snow_table) (file snow_table.asm:5)
     G A $0000 _low_high_tab (section low_high_table_1) (file low_high_table.asm:5)
+    G A $0000 _pixvals (section allan_table_1) (file allan_table.asm:4)

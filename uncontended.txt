@@ -1,0 +1,83 @@
+Object  file uncontended.o at $0000: Z80RMF12
+  Name: uncontended
+  Section data_compiler: 6 bytes
+  Section code_compiler: 2174 bytes
+  Section rodata_compiler: 642 bytes
+  Section bss_compiler: 38 bytes
+  Section code_user: 26 bytes
+  Section rodata_user: 8 bytes
+  Section smc_user: 0 bytes
+  Section data_user: 0 bytes
+  Section bss_user: 0 bytes
+  Symbols:
+    G A $0000 _x (section bss_compiler) (file uncontended.c:1418)
+    G A $0002 _y (section bss_compiler) (file uncontended.c:1419)
+    G A $0004 _t (section bss_compiler) (file uncontended.c:1420)
+    G A $0000 _yHeight (section data_compiler) (file uncontended.c:17)
+    G A $0001 _xWidth (section data_compiler) (file uncontended.c:21)
+    G A $000A _microSec (section bss_compiler) (file uncontended.c:1421)
+    G A $000E _seconds (section bss_compiler) (file uncontended.c:1422)
+    G A $0012 _minutes (section bss_compiler) (file uncontended.c:1423)
+    G A $0016 _timeStart (section bss_compiler) (file uncontended.c:1424)
+    G A $001A _timeEnd (section bss_compiler) (file uncontended.c:1425)
+    G A $001E _timeDiff (section bss_compiler) (file uncontended.c:1426)
+    G A $0002 _xx (section data_compiler) (file uncontended.c:25)
+    G A $0003 _yy (section data_compiler) (file uncontended.c:29)
+    G A $0022 _temp (section bss_compiler) (file uncontended.c:1427)
+    G A $0000 _ZX_plot (section code_compiler) (file uncontended.c:41)
+    G A $002A _unplot (section code_compiler) (file uncontended.c:76)
+    G A $0083 _zxSpectrumROM (section code_compiler) (file uncontended.c:137)
+    G A $00D3 _rtunes_pixelRoutine (section code_compiler) (file uncontended.c:183)
+    G A $0123 _loop_tester_routine (section code_compiler) (file uncontended.c:229)
+    G A $0170 _z88dkPlotFill (section code_compiler) (file uncontended.c:274)
+    G A $01BC _R_Tune_table (section code_compiler) (file uncontended.c:320)
+    G A $020C _Snow_table_routine (section code_compiler) (file uncontended.c:366)
+    G A $025C _slavo_table_routine (section code_compiler) (file uncontended.c:412)
+    G A $02AC _rtunes_optimized_table_routine (section code_compiler) (file uncontended.c:458)
+    G A $02FC _allan_table_routine (section code_compiler) (file uncontended.c:504)
+    G A $034C _allan_Experimental_table_routine (section code_compiler) (file uncontended.c:550)
+    G A $039C _cat_meows_table_routine (section code_compiler) (file uncontended.c:596)
+    G A $03EC _timerStart (section code_compiler) (file uncontended.c:642)
+    G A $044B _timerEnd (section code_compiler) (file uncontended.c:686)
+    G A $04B9 _forcedPause (section code_compiler) (file uncontended.c:737)
+    G A $04DB _pressKey (section code_compiler) (file uncontended.c:765)
+    G A $04E9 _waitForKey (section code_compiler) (file uncontended.c:778)
+    G A $050A _beforeDrawing (section code_compiler) (file uncontended.c:801)
+    G A $0517 _printBinary (section code_compiler) (file uncontended.c:813)
+    G A $07E8 _printOptions (section code_compiler) (file uncontended.c:1173)
+    G A $05E8 _options1 (section code_compiler) (file uncontended.c:936)
+    G A $0870 _main (section code_compiler) (file uncontended.c:1245)
+    G A $0000 _gfx_x (section code_user) (file plot.asm:5)
+    G A $0001 _gfx_y (section code_user) (file plot.asm:10)
+    G A $0002 _gfx_xy (section code_user) (file plot.asm:14)
+    G A $0004 _gfx_yx (section code_user) (file plot.asm:18)
+    G A $0006 _loop_tester (section code_user) (file plot.asm:25)
+    G A $0007 _ZX_ROM (section code_user) (file plot.asm:29)
+  Externs:
+    U         l_gint
+    U         l_gintspsp
+    U         l_or
+    U         l_and
+    U         l_gt
+    U         l_com
+    U         l_long_add
+    U         l_long_sub
+    U         l_long_mult
+    U         zx_border
+    U         zx_cls
+    U         zx_px2bitmask
+    U         zx_pxy2saddr_callee
+    U         zx_saddr2aaddr
+    U         printf
+    U         in_key_pressed
+    U         in_wait_key
+    U         in_wait_nokey
+    U         _rtunes_pixel
+    U         _plotpixel2
+    U         _COORDS
+    U         _snow_plot
+    U         _slavo_plot
+    U         _rtunes2
+    U         _Richard_plot
+    U         _Allan_Turvey_plot
+    U         _experimental_LUT
